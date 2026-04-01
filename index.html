@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema Financeiro</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>💰 Controle Financeiro</h1>
+
+    <!-- FORM -->
+    <div class="form">
+      <input type="text" class="inputTitle" placeholder="Descrição">
+      <input type="number" class="inputAmount" placeholder="Valor">
+
+      <select class="inputType">
+        <option value="income">Entrada</option>
+        <option value="expense">Saída</option>
+      </select>
+
+      <button class="btnAdd">Adicionar</button>
+    </div>
+
+    <!-- RESUMO -->
+    <div class="summary">
+      <div>Entradas: <span class="totalIncome">R$ 0</span></div>
+      <div>Saídas: <span class="totalExpense">R$ 0</span></div>
+      <div>Saldo: <span class="balance">R$ 0</span></div>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="filters">
+      <label><input type="radio" name="filter" value="all" checked> Todos</label>
+      <label><input type="radio" name="filter" value="income"> Entradas</label>
+      <label><input type="radio" name="filter" value="expense"> Saídas</label>
+    </div>
+
+    <!-- LISTA -->
+    <ul class="list"></ul>
+
+  </div>
+
+
+  <script type="module" src="./scripts/app.js"></script>
+
+</body>
+</html>
